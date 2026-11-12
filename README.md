@@ -19,6 +19,12 @@ jupyter lab sktime_workshop.ipynb
 ```
 The first code cells check the setup and download the Chronos model (about 35 MB) once.
 
+Python 3.11 to 3.15 works (the pins are tested with 3.11). `jupyter lab` started inside the activated venv uses the venv automatically.
+If you open the notebook from somewhere else (VS Code, an existing JupyterLab), register the venv as a kernel and select it:
+```bash
+python -m ipykernel install --user --name sktime-workshop --display-name "sktime workshop"
+```
+
 ## Edit and rebuild
 Edit `build/build_notebooks.py`, then `python build/build_notebooks.py`.
 To re-execute the instructor notebook:
