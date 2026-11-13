@@ -7,8 +7,8 @@ statsmodels>=0.15,<0.16
 matplotlib>=3.10
 seaborn>=0.13
 jupyter>=1.1
-# Block 4 (Chronos foundation model). Tip: install the CPU build of torch to save disk space:
-#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+# Block 4 (Chronos foundation model). CPU-only build of torch to save disk space.
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch>=2.5
 transformers>=5.0
 accelerate>=1.0
